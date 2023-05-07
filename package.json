@@ -4,7 +4,7 @@
     "email": "alimam01828@gmail.com",
     "name": "al-imam"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
   "files": [
