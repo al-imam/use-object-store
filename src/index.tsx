@@ -1,8 +1,8 @@
 import { useReducer } from "react";
 
-function useObjectStore(init: object) {
+function useObjectStore<StoreType>(init: StoreType) {
   return useReducer(
-    (prev: object, next: object) => ({
+    (prev: StoreType, next: Partial<StoreType>): StoreType => ({
       ...prev,
       ...next,
     }),
