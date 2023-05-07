@@ -13,7 +13,15 @@
 ## Install
 
 ```sh
+npm install use-object-store
+```
+
+```sh
 yarn add use-object-store
+```
+
+```sh
+pnpm add use-object-store
 ```
 
 ## Author
