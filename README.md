@@ -24,6 +24,29 @@ yarn add use-object-store
 pnpm add use-object-store
 ```
 
+## how to use?
+
+```typescript
+import useObjectStore from "use-object-store";
+
+function multipleCounter() {
+  /*
+    - take object as initial value
+    - type will be infer from initial value or add generic
+    - return full object and updateStore function
+    - updateStore function takes at last one store property and update that
+  */
+  const [{ one, two }, updateStore] = useObjectStore({ one: 0, two: 0 });
+
+  return (
+    <main>
+      <button onClick={() => updateStore({ one: one++ })}>{one}</button>
+      <button onClick={() => updateStore({ two: two++ })}>{two}</button>
+    </main>
+  );
+}
+```
+
 ## Author
 
 👤 **al-imam**
